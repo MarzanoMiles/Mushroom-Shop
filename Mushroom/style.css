@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body img#bgnd {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.ring {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.ring i {
+  position: absolute;
+  border: 2px solid #fff;
+  transition: 0.5s;
+  width: 450px;
+  height: 450px;
+}
+
+.ring i:nth-child(1) {
+  border-radius: 38% 55% 57% 37% / 41% 44% 56% 57%;
+  /*border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;*/
+  animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 57%/38% 55% 57% 37%;
+  animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 57%/38% 55% 57% 37%;
+  animation: animate2 10s linear infinite;
+}
+
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 10px var(--clr));
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login h2 {
+  font-size: 2em;
+  color: #ff8800f6;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.371);
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  /*background: transparent;*/
+  background-color: white;
+  border: 2px solid #00000084;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(249, 247, 247, 0.79);
+  box-shadow: none;
+  outline: none;
+}
+
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+
+.login .inputBx input::placeholder {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.796);
+}
+
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9px;
+}
+
+.login .links a {
+  color: #000000aa;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+p {
+  position: fixed;
+  top: 0;
+  left: 9px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #dcd7d720;
+}
+
+.logincontainer {
+  width: auto;
+  height: auto;
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.hovi {
+  color: black;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+.hovi:hover {
+  background-color: skyblue;
+  border-radius: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: white;
+}
+
+.backbuttn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(5, 5, 5, 0.79);
+}
+
+.backbuttn:hover {
+  border-radius: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: turquoise;
+}

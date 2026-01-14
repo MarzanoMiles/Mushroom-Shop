@@ -1,0 +1,154 @@
+/*admin*/
+
+
+.title {
+  width: 98%;
+  max-width: auto;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: orange;
+  margin: auto;
+}
+
+.parent1 {
+  width: 98%;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.parent {
+  width: 98%;
+  position: relative;
+  background-color: orange;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.usernow {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px lightblue;
+}
+
+table {
+  margin: auto;
+  position: relative;
+  width: 96%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4b41a;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#noti1,
+#noti2,
+#noti3,
+#noti4,
+#noti5,
+#noti6,
+#noti7 {
+  margin-left: 5%;
+  text-shadow: 0 0 10px rgb(243, 98, 8);
+  color: red;
+}
+
+/*admin*/
+
+.igor {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/*logout*/
+.logout1 {
+  width: 58%;
+  max-width: auto;
+  background-color: rgb(0, 113, 188);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 1cm;
+}
+
+.logag {
+  text-decoration: none;
+}
