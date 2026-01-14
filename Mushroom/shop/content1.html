@@ -1,0 +1,11 @@
+
+<h2>Paddy Straw Mushroom</h2>
+<p class="inpos">Note: The delivery is expected to occur within a timeframe of 3 to 7 days. Thank you for your understanding.</p><br>
+
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" value="1" min="1" oninput="updatePrice()">
+
+<p>Total Price: <span id="price" data-price="250.00">₱250.00</span></p>
+
+<button class="cancel" onclick="closeFloatingWindow()">Cancel</button> <button class="buy" onclick="sendData(this)" productname="PaddyStrMush">Add To Cart</button>
+<p class="warnlog">Please note: Ordering is only possible when you are logged in.</p>

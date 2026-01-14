@@ -1,0 +1,124 @@
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Back button styling */
+.aljonbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF0000; /* XAMPP Red */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+.aljonbutton:hover {
+    background-color: #e60000; /* Slightly darker red */
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Glass Effect Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #333; /* Dark background for header */
+    color: white;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* Glass-like blur effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td:hover {
+    transform: translateY(-5px); /* Hover effect for 3D look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+table td, table th {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for a glass effect */
+}
+
+/* Cancel Button Styling */
+.cancel-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FF0000; /* XAMPP Red */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: translateY(-5px); /* Hover animation */
+}
+
+/* Cancel message */
+.cancel-message {
+    background-color: #ffcccc;
+    color: #d80000;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}

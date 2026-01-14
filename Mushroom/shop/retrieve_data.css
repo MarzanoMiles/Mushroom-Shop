@@ -1,0 +1,170 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glass-like background for the table */
+.orders-table {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background: rgba(212, 120, 0, 0.1);
+    /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Light border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
+    overflow-x: auto;
+    /* Allow horizontal scrolling on smaller screens */
+}
+
+/* Table headers and rows */
+.orders-table th,
+.orders-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Styling for buttons */
+.checkoutbutton,
+.deletebutton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkoutbutton {
+    background-color: #ff4d4d;
+    /* XAMPP red */
+    color: white;
+    font-weight: bold;
+}
+
+.deletebutton {
+    background-color: #000000;
+    /* XAMPP black */
+    color: white;
+    font-weight: bold;
+}
+
+/* 3D hover effect on buttons */
+.checkoutbutton:hover,
+.deletebutton:hover {
+    transform: translateY(-5px) scale(1.05);
+    /* Slight lift and scaling */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for 3D effect */
+}
+
+/* Table row hover effect */
+.orders-table tr:hover {
+    transform: scale(1.05);
+    /* Slight zoom on row hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for row hover */
+}
+
+/* For the page title */
+h2.ord {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #000;
+}
+
+/* For the back button */
+.aljonbutton {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    /* XAMPP red */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-left: 0.2%;
+    margin-top: 0.5%;
+    transition: background-color 0.3s;
+}
+
+.aljonbutton:hover {
+    background-color: #e60000;
+    /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Adjust table layout for smaller screens */
+    .orders-table th,
+    .orders-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Reduce button sizes */
+    .checkoutbutton,
+    .deletebutton {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Adjust page title font size */
+    h2.ord {
+        font-size: 24px;
+    }
+
+    /* Make back button smaller */
+    .aljonbutton {
+        width: 130px;
+
+    }
+
+    /* Stack the table vertically and adjust margin */
+    .orders-table {
+        margin-top: 30px;
+    }
+
+    /* Allow table to scroll horizontally */
+    .orders-table {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further reduce font size and button padding for very small screens */
+    .orders-table th,
+    .orders-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .checkoutbutton,
+    .deletebutton {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    h2.ord {
+        font-size: 20px;
+    }
+
+    /* Make back button even smaller */
+    .aljonbutton {
+        width: 120px;
+    }
+}
